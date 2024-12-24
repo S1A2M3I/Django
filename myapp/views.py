@@ -15,6 +15,6 @@ def createpost(request):
         if title and content :
             BlogPost.objects.create(title=title, content=content)
             print("Data Saved Sucessfully")
-            redirect("createpost.html")
+            redirect('createpost.html')
 
     return render(request, 'createpost.html')
